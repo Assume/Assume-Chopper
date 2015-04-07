@@ -1,4 +1,4 @@
-package scripts.woodcutter;
+package scripts.woodcutter.gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

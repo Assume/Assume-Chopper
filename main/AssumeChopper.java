@@ -1,4 +1,4 @@
-package scripts.woodcutter;
+package scripts.woodcutter.main;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -20,6 +20,7 @@ import scripts.woodcutter.api.types.ingame.TreeType;
 import scripts.woodcutter.api.types.top.Worker;
 import scripts.woodcutter.api.types.top.WorkerFactory;
 import scripts.woodcutter.api.types.variables.Vars;
+import scripts.woodcutter.gui.GUI;
 
 public class AssumeChopper extends Script implements Painting,
 		MessageListening07 {
