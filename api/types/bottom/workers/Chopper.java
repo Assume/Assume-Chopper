@@ -46,9 +46,7 @@ public class Chopper implements Worker {
 		Objects.sortByDistanceA(Player.getPosition(), possible_trees);
 		removeBadTrees(possible_trees);
 		int index = getIndex(possible_trees.length);
-		if (index == -1)
-			return null;
-		return possible_trees[index];
+		return index == -1 ? null : possible_trees[index];
 	}
 
 	private int getIndex(int array_length) {
@@ -56,9 +54,7 @@ public class Chopper implements Worker {
 			return -1;
 		if (!Vars.get().abc_util.BOOL_TRACKER.USE_CLOSEST.next())
 			return 0;
-		if (array_length > 1)
-			return 1;
-		return 0;
+		return array_length > 1 ? 1 : 0;
 	}
 
 	private RSObject[] removeBadTrees(RSObject[] trees) {
